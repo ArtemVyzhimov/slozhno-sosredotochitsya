@@ -7,11 +7,10 @@
 
   background: var(--background-image) no-repeat top center,
     var(--background-color);
-  background-size: auto 768px;
   background-attachment: fixed;
+  background-size: auto 768px;
   color: var(--main-text-color);
   transition-duration: var(--transition-duration);
-  background-attachment: fixed;
 }
 
 /* Header */
