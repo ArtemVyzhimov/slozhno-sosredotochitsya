@@ -1,3 +1,14 @@
+:root {
+  --main-font: "IBM Plex mono";
+  --bg-color: #000028;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --section-title-color: #ff0070;
+  --title-color: #000028;
+  --header-color: #db00ff;
+  --bg-image: url(../images/cover-image-dark.png);
+}
+
 /*
   Переменные для вашего проекта
   и их переопределение под различные устройства
