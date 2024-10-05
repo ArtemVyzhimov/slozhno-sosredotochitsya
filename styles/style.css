@@ -17,6 +17,12 @@
   padding: 10px 10px;
 }
 
+@media (min-width: 768px) {
+  .content-section {
+    padding: 20px 20px;
+  }
+}
+
 .decorated-frame {
   position: relative;
 }
@@ -59,9 +65,11 @@
     inset-block-end: 20px;
   }
 }
+
 .header__theme-menu {
   justify-self: flex-end;
 }
+
 
 .header__theme-menu-list {
   display: flex;
@@ -107,6 +115,7 @@
 @media (min-width: 768px) {
   .header_abzac {
     inline-size: 50%;
+    justify-self: flex-end;
   }
 }
 
@@ -142,12 +151,6 @@
   color: var(--section-title-color);
   font-weight: 700;
   margin-block-end: 20px;
-}
-
-@media (min-width: 768px) {
-  .content-section {
-    padding: 20px 20px;
-  }
 }
 
 .content_list {
