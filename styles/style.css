@@ -194,6 +194,19 @@
   margin-block-end: 20px;
 }
 
+@media (min-width: 1024px) {
+  .what__title {
+    width: 315px;
+  }
+
+  .what__list {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+
 .content_list {
   display: grid;
   gap: 20px;
