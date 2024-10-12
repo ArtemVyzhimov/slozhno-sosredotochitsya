@@ -205,10 +205,8 @@
   }
 
   .what__list {
-    display: grid;
     align-items: start;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
   }
 }
 
