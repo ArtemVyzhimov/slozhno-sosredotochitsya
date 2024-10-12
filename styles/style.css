@@ -123,7 +123,7 @@
   text-align: center;
 }
 
-.header_title {
+.header_footer_title {
   align-self: center;
   justify-self: flex-start;
   color: var(--header-color);
@@ -182,17 +182,22 @@
   line-height: 130%;
 }
 
+.section_title {
+  color: var( --section-title-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+}
+
 .title_background {
   background-color: var(--accent-color);
-  font-weight: 700;
   color: var(--title-color);
 }
 
-.section_title {
-  color: var(--section-title-color);
-  font-weight: 700;
+.section_title_how {
   margin-block-end: 20px;
 }
+
 
 @media (min-width: 1024px) {
   .what__title {
@@ -201,7 +206,7 @@
 
   .what__list {
     display: grid;
-    align-items: center;
+    align-items: start;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
