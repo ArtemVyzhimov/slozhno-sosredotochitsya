@@ -11,6 +11,7 @@
 .header {
   display: grid;
   min-block-size: 100vh;
+  min-height: 667px;
 }
 
 .content-section {
@@ -48,7 +49,6 @@
 
 @media (min-width: 1024px) {
   .section-how {
-    display: grid;
     margin-block-start: 60px;
   }
 }
@@ -272,6 +272,7 @@
 
 .footer {
   min-block-size: 100vh;
+  min-height: 667px;
   display: flex;
   align-items: center;
   justify-content: center;
