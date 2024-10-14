@@ -133,6 +133,12 @@
   line-height: 82.5%;
 }
 
+@media (min-width: 768px) {
+  .header_footer_title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
+
 .header_item {
   justify-self: flex-end;
   position: relative;
@@ -145,6 +151,18 @@
   font-size: 18px;
   color: var(--accent-color);
   inset-inline-end: 28px;
+}
+
+.header_item::after {
+  content: "";
+  position: absolute;
+  inline-size: 9px;
+  block-size: 9px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 4px #ff0070);
+  inset-block-start: 8px;
+  inset-inline-end: 9px;
 }
 
 .header_abzac {

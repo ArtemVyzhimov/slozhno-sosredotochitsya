@@ -9,7 +9,11 @@
   --bg-image: url(../images/cover-image-light.png);
 }
 
-@media (prefers-color-scheme: light) {
+.page.theme_light .header_item {
+  display: none;
+}
+
+@media .page.theme_light {
   :root {
     --main-font: "IBM Plex mono";
     --bg-color: #fff1f7;
@@ -20,3 +24,4 @@
     --header-color: #ffc2e6;
     --bg-image: url(../images/cover-image-light.png);
   }
+}
