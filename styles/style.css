@@ -10,14 +10,15 @@
 
 .header {
   display: grid;
+  grid-template-rows: repeat(3, fit-content);
   min-block-size: 100vh;
   min-height: 667px;
-  padding: 10px 10px 0px 10px;
+  padding: 10px 10px 10px 10px;
 }
 
 @media (min-width: 768px) {
   .header {
-    padding: 20px 20px 0px 20px;
+    padding: 20px 20px 20px 20px;
   }
 }
 
@@ -42,15 +43,16 @@
 @media (min-width: 768px) {
   .section-why {
     display: grid;
-    grid-template-columns: 255px 1fr;
+    grid-template-columns: 235px 1fr;
     margin-block: 30px 30px;
+    gap: 20px;
   }
 }
 
 @media (min-width: 1024px) {
   .section-why {
     margin-block: 60px 80px;
-    grid-template-columns: 335px 1fr;
+    grid-template-columns: 315px 1fr;
   }
 }
 
@@ -112,13 +114,13 @@
 
 .header__theme-menu {
   justify-self: flex-end;
-  margin-block-start: 20px;
-  margin-block-end: 60px;
+  margin-block-start: 65px;
+  margin-block-end: 70px;
 }
 
 @media (min-width: 768px) {
   .header__theme-menu {
-    margin-block-start: 130px;
+    margin-block-start: 170px;
     margin-block-end: 180px;
   }
 }
@@ -140,7 +142,7 @@
 @media (min-width: 1024px) {
   .header__theme-menu-list {
     flex-direction: row;
-    position: fixed;
+    position: absolute;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
@@ -170,8 +172,14 @@
 
 .header_item {
   justify-self: flex-end;
-  position: relative;
-  margin-block-end: 40px;
+  position: absolute;
+  margin: 10px;
+}
+
+@media (min-width: 768px) {
+  .header_item {
+    margin: 20px;
+  }
 }
 
 .header_item::before {
@@ -206,14 +214,14 @@
     inline-size: 50%;
     justify-self: flex-end;
     margin-block-start: 160px;
-    margin-block-end: 185px;
+    margin-block-end: 165px;
   }
 }
 
 @media (min-width: 1024px) {
   .header_abzac {
     margin-block-start: 115px;
-    margin-block-end: 130px;
+    margin-block-end: 115px;
   }
 }
 
@@ -362,12 +370,12 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 82.5%;
+  margin-block-start: 15px;
 }
 
 @media (min-width: 768px) {
   .footer_title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin-block-start: 15px;
   }
 }
 

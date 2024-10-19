@@ -22,6 +22,10 @@
     --header-color: #ffc2e6;
     --bg-image: url(../images/cover-image-light.png);
   }
+
+  .header_item {
+    display: none;
+  }
 }
 
 
